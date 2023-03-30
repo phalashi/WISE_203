@@ -1,15 +1,11 @@
 {
-    "name" : "Phishing Detector",
-    "version": "0.0.1",
-    "manifest_version:" : 2,
-    "browser_action" : 
-    {
-        "default_popup" : "popup.html",
-        "default_icon" : "logo.png"
+    "name": "Phishing Website Detector",
+    "version": "1.0",
+    "description": "Detects phishing websites using a Flask API.",
+    "permissions": ["tabs", "http://127.0.0.1:5000/*", "activeTab"],
+    "browser_action": {
+        "default_title": "Phishing Website Detector",
+        "default_popup": "popup.html"
     },
-    "permissions" : ["activeTab"],
-    "icons" : 
-    {
-        "128" : "logo.png"
-    }
+    "manifest_version": 2
 }

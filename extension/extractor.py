@@ -340,13 +340,8 @@ def get_hostname_from_url(url):
 # TODO: Put the DNS and domain code into a function.
 
 
-def main(url):
-    #fp = urllib.request.urlopen("url")
-    #mybytes = fp.read()
-    try:
-        soup_string = requests.get(url).content
-    except:
-        soup_string = ''
+def main(url, soup_string):
+    
 
     soup = BeautifulSoup(soup_string, 'html.parser')
 
