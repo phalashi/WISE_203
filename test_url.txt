@@ -1,3 +1,9 @@
+Non Phishing:
+http://www.google.com
+http://www.youtube.com 
+
+
+Phishing:
 https://filt.us-southeast-1.linodeobjects.com/meet/pill.html
 
 https://email.metasmask.wallet.104-234-11-111.cprapid.com/app/meta/metamask.php
