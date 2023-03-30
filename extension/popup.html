@@ -2,15 +2,46 @@
 <html>
   <head>
     <title>Phishing Website Detector</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="popup.css" />
+    <style>
+      body {
+        background-color: var(--platinum);
+        color: var(--eerie-black);
+      }
+      
+      button {
+        background-color: var(--fire-brick);
+        border-color: var(--fire-brick);
+      }
+      
+      button:hover {
+        background-color: var(--air-force-blue);
+        border-color: var(--air-force-blue);
+      }
+      
+      #result {
+        color: var(--fire-brick);
+      }
+    </style>
   </head>
   <body>
-    <h1>Phishing Website Detector</h1>
-    <button id="detect-button">Detect Phishing Website</button>
-    <div id="loading-gif" style="display: none;">
-      <img src="loading.gif" alt="Loading..." />
+    <div class="container">
+      <h1 class="text-center mb-5">Phishing Website Detector</h1>
+      <div class="text-center mb-5">
+        <button id="detect-button" class="btn btn-primary btn-lg">Detect Phishing Website</button>
+      </div>
+      <div class="text-center mb-5">
+        <div id="loading-gif" style="display: none;">
+          <img src="loading.gif" alt="Loading..." />
+        </div>
+      </div>
+      <div class="text-center">
+        <div id="result"></div>
+      </div>
     </div>
-    <div id="result"></div>
     <script src="popup.js"></script>
   </body>
 </html>

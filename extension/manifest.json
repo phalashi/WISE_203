@@ -5,7 +5,8 @@
     "permissions": ["tabs", "http://127.0.0.1:5000/*", "activeTab"],
     "browser_action": {
         "default_title": "Phishing Website Detector",
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon" : "logo.png"
     },
     "manifest_version": 2
 }
