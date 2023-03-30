@@ -31,6 +31,7 @@ function detectPhishingWebsite() {
 
           // Display the result in the popup
           const resultElement = document.getElementById('result');
+          console.log(data)
           if (data.prediction == 1) {
             resultElement.innerText = 'This website is safe.';
           } else {
