@@ -341,8 +341,6 @@ def get_hostname_from_url(url):
 
 
 def main(url):
-    #fp = urllib.request.urlopen("url")
-    #mybytes = fp.read()
     try:
         soup_string = requests.get(url).content
     except:
@@ -402,6 +400,6 @@ def main(url):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-         print("Please use the following format for the command - `python2 features_extraction.py <url-to-be-tested>`")
-         exit(0)
-    main(sys.argv[1])
+        print("Please use the following format for the command - `python2 features_extraction.py <url-to-be-tested>`")
+        exit(0)
+    print(main(sys.argv[1]))
