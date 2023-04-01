@@ -71,16 +71,19 @@ def url_length(url):
     return -1
 
 
+# Checking if the URL was created using a shortening service (bit.ly/tiny.url etc)
 def shortening_service(url):
     match = re.search(shortening_services, url)
     return -1 if match else 1
 
 
+# Check if the URL contains an @ symbol
 def having_at_symbol(url):
     match = re.search('@', url)
     return -1 if match else 1
 
 
+# Checking if the URL has a '//' as it may indicate redirecting
 def double_slash_redirecting(url):
     # since the position starts from 0, we have given 6 and not 7 which is according to the document.
     # It is convenient and easier to just use string search here to search the last occurrence instead of re.
@@ -88,6 +91,7 @@ def double_slash_redirecting(url):
     return -1 if last_double_slash > 6 else 1
 
 
+# Checking if the 
 def prefix_suffix(domain):
     match = re.search('-', domain)
     return -1 if match else 1
