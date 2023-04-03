@@ -1,0 +1,22 @@
+{
+  "name": "wise_203",
+  "version": "1.0.0",
+  "description": "",
+  "main": "extension/popup.js",
+  "scripts": {
+    "start": "node extension/popup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phalashi/WISE_203.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyclic-software/starter-express-api/issues"
+  },
+  "homepage": "https://github.com/phalashi/WISE_203/extension/popup.html",
+  "dependencies": {
+   
+  }
+}
